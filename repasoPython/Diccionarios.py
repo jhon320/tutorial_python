@@ -1,21 +1,31 @@
 # Para crear un diccionario en Python, se utiliza la sintaxis de llaves ({}) y se separan los pares clave-valor
 # con dos puntos (:), y se separan los elementos del diccionario con comas.
 
-diccionario = {"clave1": valor1, "clave2": valor2, "clave3": valor3}
+car =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(
+car.get("model")
+)
 
-# También se puede crear un diccionario vacío y luego agregar elementos a él.
-diccionario = {}
-diccionario["clave1"] = valor1
-diccionario["clave2"] = valor2
-diccionario["clave3"] = valor3
-
-# Para acceder a un valor en un diccionario, se utiliza la clave correspondiente.
-valor = diccionario["clave1"]
-
-# Para modificar un valor en un diccionario, se utiliza la clave correspondiente y se asigna un nuevo valor a ella
-diccionario["clave1"] = nuevo_valor
-
-# Para eliminar un elemento de un diccionario, se utiliza la palabra clave "del" seguida de la clave correspondiente.
-del diccionario["clave1"]
+car =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+car["year"] = 2020
 
 
+diccionario1 = {"nombre": "Juan", "edad": 30, "ciudad": "Madrid"}
+diccionario1["profesion"] = "programador"
+print(diccionario1)
+
+diccionario2 = {"nombre": "Maria", "edad": 25, "ciudad": "Barcelona"}
+del diccionario2["edad"]
+print(diccionario2)
+
+diccionario3 = {"nombre": "Pedro", "edad": 35, "ciudad": "Valencia"}
+busqueda = diccionario3.get("edad")
+print(busqueda)
